@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Soto | About</title>
+
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
+  <!-- NES.css Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="nes-container is-dark with-title">
+    <p class="title">Navigation</p>
+    <nav>
+      <ul>
+        <li><a class="nes-text is-primary" href="/home.html">Home</a></li>
+        <li><a class="nes-text is-success" href="/about.html">About</a></li>
+        <li><a class="nes-text is-warning" href="/portfolio.html">Portfolio</a></li>
+        <li><a class="nes-text is-error" href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="nes-container with-title is-rounded">
+    <p class="title">About Me</p>
+
+    <p>
+      My name is Ryan Soto, and I am a Computer Science graduate candidate with a robust foundation in programming, software development, and problem-solving. I am working towards a Bachelor’s degree in Computer Science from Trinity University, where I have developed skills in languages like Java and Scala, as well as methodologies such as Agile.
+    </p>
+
+    <p>
+      My experience includes hands-on projects and internships where I have demonstrated my ability to tackle complex technical challenges and contribute to innovative solutions. I am passionate about software engineering and IT, with a keen interest in areas such as game development and front-end development.
+    </p>
+
+    <p>
+      I am seeking a position that allows me to leverage my technical skills, collaborate with experienced professionals, and make meaningful contributions to cutting-edge projects. My goal is to continuously grow my expertise while working in a dynamic and growth-oriented environment.
+    </p>
+
+    <p>
+      Outside of my professional life, I enjoy watching anime, playing video games, and hanging out with friends. Feel free to connect with me on 
+      <a href="https://www.linkedin.com/in/ryan-soto-8b1667210/" target="_blank">LinkedIn</a> or reach out via email at 
+      <a href="mailto:sotor07262001@gmail.com">sotor07262001@gmail.com</a>.
+    </p>
+  </section>
+  <!-- Toggle Button for Music -->
+  <section style="text-align: center; margin-top: 2em;">
+    <button id="music-toggle" class="nes-btn is-primary">Pause Music</button>
+  </section>
+
+  <!-- Audio Player (Persistent) -->
+  <audio id="background-music" autoplay loop>
+    <source src="Super Mario 64 - Inside Peachs Castle Music.mp4" type="audio/mpeg" />
+  </audio>
+
+  <!-- JavaScript for Music Control -->
+  <footer class="nes-container is-dark">
+    <p class="nes-text is-disabled">&copy; 2024 Ryan Soto. All rights reserved.</p>
+  </footer>
+  <script src="index.js"></script>
+
+</body>
+</html>

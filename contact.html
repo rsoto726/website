@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Soto | Contact</title>
+
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
+
+  <!-- NES Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="nes-container is-dark with-title">
+    <p class="title">Navigation</p>
+    <nav>
+      <ul>
+        <li><a class="nes-text is-primary" href="/home.html">Home</a></li>
+        <li><a class="nes-text is-success" href="/about.html">About</a></li>
+        <li><a class="nes-text is-warning" href="/portfolio.html">Portfolio</a></li>
+        <li><a class="nes-text is-error" href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact" class="nes-container with-title is-rounded">
+    <p class="title">Contact Me</p>
+    <form id="contact-form">
+      <div class="nes-field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="nes-input" name="name" required />
+      </div>
+
+      <div class="nes-field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="nes-input" name="email" required />
+      </div>
+
+      <div class="nes-field">
+        <label for="message">Message:</label>
+        <textarea id="message" class="nes-textarea" name="message" required></textarea>
+      </div>
+
+      <button type="submit" class="nes-btn is-primary">Send</button>
+    </form>
+  </section>
+
+  <!-- Audio Player (Persistent) -->
+  <audio id="background-music" autoplay loop>
+    <source src="Super Mario 64 - Inside Peachs Castle Music.mp4" type="audio/mpeg" />
+  </audio>
+
+  <!-- Toggle Button -->
+  <section style="text-align: center; margin-top: 2em;">
+    <button id="music-toggle" class="nes-btn is-primary">Pause Music</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="nes-container is-dark">
+    <p class="nes-text is-disabled">&copy; 2024 Ryan Soto. All rights reserved.</p>
+  </footer>
+  
+  <!-- JavaScript for Form Handling and Persistent Music -->
+  <script src="index.js"></script>
+</body>
+</html>
