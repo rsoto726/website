@@ -4,48 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ryan Soto | Portfolio</title>
-
-  <!-- NES.css -->
-  <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
-  <!-- NES.css Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-
-  <!-- Custom Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="nes-container is-dark with-title">
-    <p class="title">Navigation</p>
-    <nav>
-      <ul>
-        <li><a class="nes-text is-primary" href="index.html">Home</a></li>
-        <li><a class="nes-text is-success" href="about.html">About</a></li>
-        <li><a class="nes-text is-warning" href="portfolio.html">Portfolio</a></li>
-      </ul>
-    </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Ryan Soto</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Portfolio Section -->
-  <section id="portfolio" class="nes-container with-title is-rounded">
-    <p class="title">Projects I Have Worked On</p>
+  <main class="container">
+    <section id="portfolio">
+      <h2>Projects I Have Worked On</h2>
+      <p>Check out my work on <a href="https://github.com/rsoto726" target="_blank">GitHub</a>.</p>
 
-    <div class="portfolio-items">
-      <p class="nes-text is-primary">Check out my work on <a href="https://github.com/rsoto726" target="_blank">GitHub</a></p>
-    </div>
+      <!-- Unity WebGL Game -->
+      <div class="portfolio-item" style="margin-top: 2em;">
+        <h3>Game Development Final Project</h3>
+        <iframe src="game.html" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+      </div>
 
-    <section class="nes-container is-dark is-rounded" style="margin-top: 2em;">
-      <h3 class="nes-text is-warning">🎮 Game Development Final Project</h3>
-      <iframe src="game.html" width="1000" height="600" frameborder="0" allowfullscreen></iframe>
+      <!-- Other Projects -->
+      <!-- You can add more project sections here with <div class="portfolio-item"> -->
     </section>
-  </section>
-  <section style="text-align: center; margin-top: 2em;">
-    <button id="music-toggle" class="nes-btn is-primary">Pause Music</button>
-  </section>
-  <footer class="nes-container is-dark">
-    <p class="nes-text is-disabled">&copy; 2024 Ryan Soto. All rights reserved.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Ryan Soto. All rights reserved.</p>
+    </div>
   </footer>
-  <script src="index.js"></script>
 
 </body>
 </html>

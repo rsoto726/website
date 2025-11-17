@@ -4,67 +4,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ryan Soto | About</title>
-
-  <!-- NES.css -->
-  <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
-  <!-- NES.css Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-
-  <!-- Custom Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-
-
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="nes-container is-dark with-title">
-    <p class="title">Navigation</p>
-    <nav>
-      <ul>
-        <li><a class="nes-text is-primary" href="index.html">Home</a></li>
-        <li><a class="nes-text is-success" href="about.html">About</a></li>
-        <li><a class="nes-text is-warning" href="portfolio.html">Portfolio</a></li>
-      </ul>
-    </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Ryan Soto</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="nes-container with-title is-rounded">
-    <p class="title">About Me</p>
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>My name is Ryan Soto, a Computer Science graduate with experience in software development, web apps, and game development.</p>
+      <p>I have worked on various projects during my time at Trinity University, honing my skills in Java, Scala, and web technologies. I enjoy tackling complex problems and creating innovative solutions.</p>
+      <p>Outside of work, I enjoy playing video games, watching anime, and connecting with friends. Feel free to reach out on <a href="https://www.linkedin.com/in/ryan-soto-8b1667210/" target="_blank">LinkedIn</a> or via email at <a href="mailto:sotor07262001@gmail.com">sotor07262001@gmail.com</a>.</p>
+    </section>
+  </main>
 
-    <p>
-      My name is Ryan Soto, and I am a Computer Science graduate candidate with a robust foundation in programming, software development, and problem-solving. I am working towards a Bachelor’s degree in Computer Science from Trinity University, where I have developed skills in languages like Java and Scala, as well as methodologies such as Agile.
-    </p>
-
-    <p>
-      My experience includes hands-on projects and internships where I have demonstrated my ability to tackle complex technical challenges and contribute to innovative solutions. I am passionate about software engineering and IT, with a keen interest in areas such as game development and front-end development.
-    </p>
-
-    <p>
-      I am seeking a position that allows me to leverage my technical skills, collaborate with experienced professionals, and make meaningful contributions to cutting-edge projects. My goal is to continuously grow my expertise while working in a dynamic and growth-oriented environment.
-    </p>
-
-    <p>
-      Outside of my professional life, I enjoy watching anime, playing video games, and hanging out with friends. Feel free to connect with me on 
-      <a href="https://www.linkedin.com/in/ryan-soto-8b1667210/" target="_blank">LinkedIn</a> or reach out via email at 
-      <a href="mailto:sotor07262001@gmail.com">sotor07262001@gmail.com</a>.
-    </p>
-  </section>
-  <!-- Toggle Button for Music -->
-  <section style="text-align: center; margin-top: 2em;">
-    <button id="music-toggle" class="nes-btn is-primary">Pause Music</button>
-  </section>
-
-  <!-- Audio Player (Persistent) -->
-  <audio id="background-music" autoplay loop>
-    <source src="Super Mario 64 - Inside Peachs Castle Music.mp4" type="audio/mpeg" />
-  </audio>
-
-  <!-- JavaScript for Music Control -->
-  <footer class="nes-container is-dark">
-    <p class="nes-text is-disabled">&copy; 2024 Ryan Soto. All rights reserved.</p>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Ryan Soto. All rights reserved.</p>
+    </div>
   </footer>
-  <script src="index.js"></script>
 
 </body>
 </html>

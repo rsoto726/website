@@ -4,52 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ryan Soto | Home</title>
-
-  <!-- NES.css -->
-  <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
-
-  <!-- NES Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-
-  <!-- Custom Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-
 </head>
-
 <body>
-  <!-- Header Section -->
-  <header class="nes-container is-dark with-title">
-    <p class="title">Navigation</p>
-    <nav>
-      <ul>
-        <li><a class="nes-text is-primary" href="home.html">Home</a></li>
-        <li><a class="nes-text is-success" href="about.html">About</a></li>
-        <li><a class="nes-text is-warning" href="portfolio.html">Portfolio</a></li>
-      </ul>
-    </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Ryan Soto</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Home Section -->
-  <section id="home" class="nes-container with-title is-centered is-rounded">
-    <p class="title">Welcome</p>
-    <h1 class="nes-text is-primary">Welcome to My Personal Website</h1>
-    <p class="nes-text">I'm Ryan Soto, a Computer Science graduate from Trinity University.</p>
-    <img src="Ryan Soto-402.jpg" alt="Ryan Soto" class="responsive-img nes-avatar is-rounded" />
-  </section>
-  <!-- Audio Player (Persistent) -->
-  <audio id="background-music" autoplay loop>
-    <source src="Super Mario 64 - Inside Peachs Castle Music.mp4" type="audio/mpeg" />
-  </audio>
+  <main class="container">
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>I'm Ryan Soto, a Computer Science graduate from Trinity University. I build web apps, software, and interactive experiences.</p>
+      <img src="Ryan Soto-402.jpg" alt="Ryan Soto" class="responsive-img" />
+    </section>
+  </main>
 
-  <!-- Toggle Button -->
-  <section style="text-align: center; margin-top: 2em;">
-    <button id="music-toggle" class="nes-btn is-primary">Pause Music</button>
-  </section>
   <!-- Footer -->
-  <footer class="nes-container is-dark">
-    <p class="nes-text is-disabled">&copy; 2024 Ryan Soto. All rights reserved.</p>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Ryan Soto. All rights reserved.</p>
+    </div>
   </footer>
-  <script src="index.js"></script>
 
 </body>
 </html>
