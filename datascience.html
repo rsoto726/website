@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Soto | Data Science Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1 class="logo">Ryan Soto</h1>
+    <nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Game Portfolio</a></li>
+        <li><a href="datascience.html">Data Science Portfolio</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section id="ds-portfolio">
+    <h2>Data Science Portfolio</h2>
+    <p>A collection of my Power BI dashboards, dataflows, and real-time Eventstream processes.</p>
+
+    <div class="grid">
+
+      <!-- 1. DA Survey Results Dashboard -->
+      <div class="grid-item" onclick="openModal('img1')">
+        <img src="DA_Survey.png" id="img1" alt="DA Survey Results Dashboard">
+        <h3>DA Survey Results Dashboard</h3>
+        <p>Interactive survey results dashboard with filters for department and year, including average scores and feature usability ratings.</p>
+      </div>
+
+      <!-- 2. Power BI Report Usage Overview -->
+      <div class="grid-item" onclick="openModal('img2')">
+        <img src="PowerBIRUO.png" id="img2" alt="Power BI Report Usage Overview">
+        <h3>Power BI Report Usage Overview</h3>
+        <p>Report catalog showing datasource usage, refresh patterns, and report distribution across workspaces.</p>
+      </div>
+
+      <!-- 3. Survey Results Dataflow -->
+      <div class="grid-item" onclick="openModal('img3')">
+        <img src="Powerflow.png" id="img3" alt="Survey Results Dataflow">
+        <h3>Survey Results Dataflow</h3>
+        <p>Power BI dataflow used to ingest and transform survey data into structured reporting tables.</p>
+      </div>
+
+      <!-- 4. Post-Dataflow Eventstream -->
+      <div class="grid-item" onclick="openModal('img4')">
+        <img src="EventStream.png" id="img4" alt="Eventstream Flow">
+        <h3>Post-Dataflow Eventstream</h3>
+        <p>Event-driven real-time stream triggered after dataflow execution to automate data routing.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Modal -->
+<div id="imgModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+  const toggleButton = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  function openModal(imgId) {
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImage");
+    const img = document.getElementById(imgId);
+
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  }
+
+  function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+  }
+</script>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Ryan Soto. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
